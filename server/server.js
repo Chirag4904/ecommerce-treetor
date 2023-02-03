@@ -1,4 +1,5 @@
 const http = require("http");
+require("dotenv").config();
 
 const app = require("./app");
 const { mongoConnect } = require("./services/mongo");
@@ -14,6 +15,7 @@ async function startServer() {
 	// await createProductDB(mockData);
 	server.listen(PORT, () => {
 		console.log(`Server is running on port ${PORT}`);
+		console.log(process.env.MONGO_URI);
 	});
 }
 
