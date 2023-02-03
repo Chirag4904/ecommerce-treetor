@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const { PasswordManager } = require("../services/PasswordManager");
+const { PasswordManager } = require("../services/passwordManager");
 
 const { ifUserExists, addNewUser } = require("../models/user.model");
 
