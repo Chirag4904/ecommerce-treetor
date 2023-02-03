@@ -22,7 +22,11 @@ app.use(
 	cors({
 		credentials: true,
 
-		origin: ["http://localhost:3000", process.env.FRONTEND_URL],
+		origin: [
+			"http://localhost:3000",
+			process.env.FRONTEND_URL,
+			"http://52.197.251.65:3000",
+		],
 	})
 );
 
