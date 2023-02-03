@@ -8,6 +8,10 @@ const getCategories = async () => {
 };
 
 const products = async () => {
+	const testing = await axios.get(
+		`${process.env.REACT_APP_BACKEND_URL}/products`
+	);
+	console.log(testing);
 	const response = await axios.get("http://localhost:5000/products");
 	return response.data;
 };

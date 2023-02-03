@@ -6,7 +6,7 @@ import OrdersPage from "./Pages/OrdersPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-	console.log(process.env.REACT_APP_API_URL);
+	console.log(process.env.REACT_APP_BACKEND_URL);
 	return (
 		<BrowserRouter>
 			<Routes>
